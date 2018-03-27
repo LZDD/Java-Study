@@ -4,7 +4,9 @@ import com.lzdd.annotation.AnnotationDemo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -32,5 +34,10 @@ public class DemoController {
         LOGGER.debug("Here is getTest method");
         System.out.println("Here is getTest method");
         return "getTest";
+    }
+
+
+    public String test(@PathVariable() String name,@RequestParam String age){
+        return "sdf";
     }
 }
