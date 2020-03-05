@@ -1,6 +1,5 @@
 package com.lzdd.creational.singleton;
 
-import lombok.Synchronized;
 
 /**
  * @author fei.tang@hand-china.com
@@ -23,6 +22,4 @@ public class Singleton4 {
         }
         return instance;
     }
-
-
 }
