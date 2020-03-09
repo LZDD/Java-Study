@@ -16,7 +16,6 @@ public class StatePattern {
         context.handler();
         context.handler();
     }
-
 }
 
 interface IState {
