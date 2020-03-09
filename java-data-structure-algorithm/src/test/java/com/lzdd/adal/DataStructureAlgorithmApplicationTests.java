@@ -1,4 +1,4 @@
-package com.lzdd.datastructurealgorithm;
+package com.lzdd.adal;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

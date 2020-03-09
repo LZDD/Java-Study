@@ -1,4 +1,4 @@
-package com.lzdd.datastructurealgorithm.algorithm;
+package com.lzdd.adal.algorithm;
 
 import com.alibaba.fastjson.JSON;
 import com.google.common.collect.Lists;
