@@ -12,7 +12,7 @@ import java.util.List;
  * 关键点：中介对象的注册和转发。 驱动是对象。
  * 理解记忆：对象的一个方法调用中介的一个方法，中介的方法在调用其他对象的方法。
  **/
-public class Mediator {
+public class MediatorPattern {
 
     public static void main(String[] args) {
         ConcreteMediator me = new ConcreteMediator();
