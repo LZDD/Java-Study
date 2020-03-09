@@ -2,6 +2,8 @@
 > ## 有如下几方面的知识
 > * Java Annotation,注解
 > * Java 23种设计模式
+>
+> http://c.biancheng.net/view/1376.html
 
 
 ## 工作日志
