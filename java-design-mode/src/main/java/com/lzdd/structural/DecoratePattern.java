@@ -31,7 +31,7 @@ class Component implements IDecorateComponent{
 }
 
 class AbstractDecorate implements IDecorateComponent{
-    private IDecorateComponent idc;
+    protected IDecorateComponent idc;
 
     public AbstractDecorate(IDecorateComponent decorateComponent){
         this.idc = decorateComponent;
