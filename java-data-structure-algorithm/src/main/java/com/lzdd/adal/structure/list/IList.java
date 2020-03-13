@@ -8,7 +8,8 @@ import java.util.Iterator;
  **/
 public interface IList<E> {
     E get(int i);
-    E set(int i, E t);
+    E set(int i, E e);
+    void add(E e);
     void remove(int i);
     int size();
     Iterator<E> listIterator();

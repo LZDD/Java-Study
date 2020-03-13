@@ -42,6 +42,13 @@ public class MyArrayList<E> implements IList<E> {
         if (i < 0){
             return null;
         }
+        E oldElement = (E) this.element[i];
+        this.element[i] = t;
+        return oldElement;
+    }
+
+    @Override
+    public void add(E e) {
         // 扩容
         if (size == capacity){
             capacity = capacity >> 1;
@@ -51,16 +58,7 @@ public class MyArrayList<E> implements IList<E> {
             }
             element = newElement;
         }
-
-        // 移动
-        for (int j = size; j > i; j++){
-            element[size] = element[size++];
-        }
-
-        E oldElement = (E) this.element[i];
-        this.element[i] = t;
-        size++;
-        return oldElement;
+        this.element[size++] = e;
     }
 
     @Override
@@ -85,9 +83,7 @@ public class MyArrayList<E> implements IList<E> {
     }
 
     class Itr<E> implements Iterator<E>{
-
         int index =0;
-
         @Override
         public boolean hasNext() {
             return index < size;
